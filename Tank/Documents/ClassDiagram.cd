@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Tank.Program" Collapsed="true">
+    <Position X="5.5" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Calc" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Tank.DataResults">
+    <Position X="8" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAIAAAEAAAAAQAIEAACAAAAAIEIABAAAQAAAA=</HashCode>
+      <FileName>DataResults.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ResultsShells" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Tank.ResultsShells" Collapsed="true">
+    <Position X="10.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataResults.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="Shells" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Tank.ResultsShell">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAQAAAAAAACAAAAAAAAAAAAAAIAABACAAAAAAAIAAA=</HashCode>
+      <FileName>DataResults.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tank.Calculation" Collapsed="true">
+    <Position X="5.5" Y="5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Input" Type="Tank.DataInputs" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="5.502" />
+        <Point X="7.375" Y="5.502" />
+        <Point X="7.375" Y="6.031" />
+        <Point X="8" Y="6.031" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Options" Type="Tank.DataOptions" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="5.141" />
+        <Point X="7.375" Y="5.141" />
+        <Point X="7.375" Y="1.374" />
+        <Point X="8" Y="1.374" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAQBAAAAAAAgAAAAAAAAAAGAAAAAAAAAAAAABAAQA=</HashCode>
+      <FileName>Calculation.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Input" />
+      <Field Name="Results" />
+      <Field Name="Res" />
+      <Field Name="Options" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Tank.Const" Collapsed="true">
+    <Position X="5.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAABAEA=</HashCode>
+      <FileName>Constants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tank.DataInputs" Collapsed="true">
+    <Position X="8" Y="5.75" Width="1.5" />
+    <AssociationLine Name="DataMat" Type="Tank.DataMaterials" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9.5" Y="6.25" />
+        <Point X="9.875" Y="6.25" />
+        <Point X="9.875" Y="7.706" />
+        <Point X="10.5" Y="7.706" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>DataInputs.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="DataGlobal" />
+      <Field Name="DataShells" />
+      <Field Name="DataMat" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Tank.DataGlobal" Collapsed="true">
+    <Position X="10.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AC0ABCAhAAQAGAABAAAAABAAAAEAAABAJggBQgAAAAA=</HashCode>
+      <FileName>DataInputs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tank.DataShells">
+    <Position X="10.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataInputs.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="Shells" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Tank.ShellCourse">
+    <Position X="13" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAIAgAAAAAA=</HashCode>
+      <FileName>DataInputs.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Material" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Tank.DataMaterials">
+    <Position X="10.5" Y="7.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAgAAIg=</HashCode>
+      <FileName>DataInputs.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="Materials" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Tank.DataMaterial">
+    <Position X="15.5" Y="5.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AACAIBAACAAIAAACAAAAADQAAAAAAAgACCAAAAAAAAA=</HashCode>
+      <FileName>DataInputs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tank.DataOptions">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>DataOptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tank.DataResources" Collapsed="true">
+    <Position X="5.5" Y="7" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Mat" Type="Tank.Materials" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="7.379" />
+        <Point X="5.125" Y="7.379" />
+        <Point X="5.125" Y="3.25" />
+        <Point X="4.5" Y="3.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAQAAAAACAAAAAAAAAAAAAAAAAAAAAAM=</HashCode>
+      <FileName>DataResources.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="UnL" />
+      <Field Name="Mat" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Tank.Provider" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQEAgAAAEAAQAAAAAAIAAAAAgAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modules\Data\Provider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tank.Helpers" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAEAAAAAAAEAAQABgAAAAAAAA=</HashCode>
+      <FileName>Modules\Helpers\Helpers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tank.CodeStuff" Collapsed="true">
+    <Position X="5.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modules\Data\Materials\Material.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tank.Material">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAEIABgAAgAAKCAAAEgABAAAIAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Modules\Data\Materials\Material.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Re02" />
+      <Field Name="Re10" />
+      <Field Name="Rm" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Tank.HeaderHolder" Collapsed="true">
+    <Position X="5.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAsAAAAAAAIKAAAAAAAAACAAAAAAAAChAAAQAAA=</HashCode>
+      <FileName>Modules\Data\Materials\Materials.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tank.Materials">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABRAAAAAAAAAAABAEAAAACAAAAAAgAAAABAAAABABAA=</HashCode>
+      <FileName>Modules\Data\Materials\Materials.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="materials" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Tank.TemperatureData">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="Tank.TemperatureData.DataHolder" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Modules\Data\Materials\TemperatureData.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAIABAAAAAAAQAAAAA=</HashCode>
+      <FileName>Modules\Data\Materials\TemperatureData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tank.ThicknessList">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAABAAAAEAAAAAAA=</HashCode>
+      <FileName>Modules\Data\Materials\Thickness.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="Thk" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Tank.Thickness">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAIAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Modules\Data\Materials\Thickness.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="TD" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Tank.Profile_UnL" Collapsed="true">
+    <Position X="8" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EABAAAAAIAAAAABAAAAAAAAAAAAAACAACAAAAAIAAAA=</HashCode>
+      <FileName>Modules\Data\Profiles\Profile_UnL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
